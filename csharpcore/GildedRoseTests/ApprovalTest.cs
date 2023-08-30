@@ -20,7 +20,7 @@ namespace csharp
             Console.SetOut(new StringWriter(fakeoutput));
             Console.SetIn(new StringReader("a\n"));
 
-            TexttestFixture.Main(new string[] { });
+            TextTestFixture.Main(new string[] { });
             var output = fakeoutput.ToString();
 
             Approvals.Verify(output);
